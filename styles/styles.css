@@ -1,0 +1,89 @@
+body {
+  font-family: "Montserrat-Black", sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  border: 2px solid yellow;
+  padding: 10px 0;
+  margin-bottom: auto;
+}
+
+button {
+}
+
+.colored-section {
+  background-color: #dbe2ef;
+}
+
+.white-section {
+  background-color: white;
+
+  text-align: center;
+}
+
+/* navbar */
+.navbar-brand {
+  font-size: 2.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: "Montserrat-Light", sans-serif;
+  font-size: 1.2rem;
+}
+
+/* title */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  z-index: -1;
+  text-align: left;
+}
+
+.section-heading {
+  padding: 25px 0px;
+}
+
+.fa-user-check,
+.fa-edit,
+.fa-bolt,
+.fa-chart-bar,
+.fa-tasks,
+.fa-search,
+.fa-file-signature {
+  color: #3e4474;
+}
+
+/* cards */
+.card-body {
+  border: 2px solid red;
+  padding-bottom: 0px;
+}
+
+/* buttons */
+
+.btn {
+  border: 2px solid green;
+}
+
+.button-services {
+  border: 2px solid green;
+}
