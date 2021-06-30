@@ -13,12 +13,8 @@ h6 {
 }
 
 p {
-  border: 2px solid yellow;
   padding: 10px 0;
   margin-bottom: auto;
-}
-
-button {
 }
 
 .colored-section {
@@ -74,16 +70,14 @@ button {
 
 /* cards */
 .card-body {
-  border: 2px solid red;
-  padding-bottom: 0px;
+  padding: 1rem 0.5rem !important;
+  margin: 0rem !important;
 }
 
-/* buttons */
-
-.btn {
-  border: 2px solid green;
+.card-text {
+  height: 50%;
 }
 
-.button-services {
-  border: 2px solid green;
+.card {
+  background-color: #a7a9ac !important;
 }
