@@ -40,6 +40,17 @@ p {
   text-align: center;
 }
 
+.logo-section {
+  background-color: #f1f6f9;
+  text-align: center;
+}
+
+.footer-section {
+  background-color: #394867;
+  padding: 5px 0px 40px 0px;
+  text-align: center;
+}
+
 .colored-section-nowhite {
   padding: 45px 65px;
   text-align: center;
