@@ -1,28 +1,53 @@
 body {
   font-family: "Montserrat-Black", sans-serif;
   text-align: center;
+  background-color: #f1f6f9;
 }
 
 h1,
-h2,
-h3,
 h4,
-h5,
+h5 {
+  font-family: "Montserrat-Black", sans-serif;
+}
+
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-Black", sans-serif;
+  font-weight: bold !important;
+}
+
+h3 {
+  font-family: "Montserrat-Black", sans-serif;
+  color: white !important;
+}
+
+h2 {
+  font-family: "Archivo Black", sans-serif !important;
+  font-size: 35px !important;
+  color: #14274e !important;
+  padding-bottom: 45px !important;
 }
 
 p {
-  padding: 10px 0;
+  padding: 5px 0;
   margin-bottom: auto;
 }
 
+/* sections */
+
 .colored-section {
-  background-color: #dbe2ef;
+  background-color: #f1f6f9;
+  padding: 55px 0px 100px 0px;
+  text-align: center;
+}
+
+.colored-section-nowhite {
+  padding: 45px 65px;
+  text-align: center;
+  background-image: url("../img/projects.png");
 }
 
 .white-section {
-  background-color: white;
+  background-color: #f1f6f9;
 
   text-align: center;
 }
@@ -55,17 +80,27 @@ p {
 }
 
 .section-heading {
-  padding: 25px 0px;
+  padding: 25px 0px 65px 0px !important;
 }
 
+/* headings */
+.projects-heading {
+  padding: 25px 0px 55px 0px;
+  color: white;
+  font-family: "Archivo Black", sans-serif !important;
+  font-size: 35px !important;
+}
+
+/* fontawesome */
 .fa-user-check,
 .fa-edit,
 .fa-bolt,
 .fa-chart-bar,
 .fa-tasks,
 .fa-search,
-.fa-file-signature {
-  color: #3e4474;
+.fa-file-signature,
+.fa-box-open {
+  color: #394867;
 }
 
 /* cards */
@@ -79,5 +114,31 @@ p {
 }
 
 .card {
-  background-color: #a7a9ac !important;
+  background-color: white !important;
+  border-color: #14274e !important;
+}
+
+.list-group {
+  max-height: 400px;
+  margin-bottom: 10px;
+  overflow: scroll;
+}
+
+/* text */
+
+.contact-text {
+  font-family: "Montserrat-Black", sans-serif !important;
+  font-size: 35px;
+  font-weight: bold;
+  color: #14274e !important;
+  padding: 20% 20% 10% 20%;
+  text-align: left;
+}
+
+/* forms */
+
+.form-div {
+  margin: 10% 10%;
+  padding: 10% 10%;
+  background-color: #394867;
 }
