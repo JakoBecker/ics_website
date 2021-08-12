@@ -1,0 +1,66 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+}
+
+.container-fluid {
+  padding: 1% 15%;
+}
+
+/* navbar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+#navbar-div {
+  z-index: 2 !important;
+  position: relative;
+  width: 100%;
+}
+
+#navbarTogglerDemo02 {
+  opacity: 1;
+}
+
+#nav {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* title */
+#title .container-fluid {
+  padding: 1px 1% 7%;
+  height: 650px;
+}
+
+#scroller {
+  position: relative;
+  top: 0px;
+  z-index: 1 !important;
+}
+
+/* section */
+.colored-section {
+}
+
+.white-section {
+  background-color: white;
+  text-align: center;
+}
