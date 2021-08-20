@@ -91,7 +91,7 @@ p {
 }
 
 .nav-item {
-  padding: 0 18px;
+  padding: 0 15px;
 }
 
 .nav-link {
@@ -114,6 +114,13 @@ p {
 .projects-heading {
   padding: 25px 0px 55px 0px;
   color: white;
+  font-family: "Archivo Black", sans-serif !important;
+  font-size: 35px !important;
+}
+
+.connect-heading {
+  padding: 25px 0px 55px 0px;
+  color: #14274e;
   font-family: "Archivo Black", sans-serif !important;
   font-size: 35px !important;
 }
@@ -205,4 +212,9 @@ p {
   background-color: #dbe2ef;
   border-radius: 15px;
   padding: 10px;
+}
+
+/* text */
+.bold-style {
+  color: #394867;
 }
