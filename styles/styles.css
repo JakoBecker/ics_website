@@ -37,6 +37,7 @@ h2 {
 p {
   padding: 5px 0;
   margin-bottom: auto;
+  font-family: "Montserrat-Black", sans-serif;
 }
 
 .row {
@@ -46,6 +47,12 @@ p {
 
 .colored-section {
   background-color: #f1f6f9;
+  padding: 55px 0px 100px 0px;
+  text-align: center;
+}
+
+.colored-section-blue {
+  background-color: #14274e;
   padding: 55px 0px 100px 0px;
   text-align: center;
 }
@@ -142,6 +149,9 @@ p {
   color: #394867;
 }
 
+.fa-exclamation-triangle {
+  color: #ea4335;
+}
 /* cards */
 .card-body {
   padding: 1rem 0.5rem !important;
