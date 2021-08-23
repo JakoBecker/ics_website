@@ -229,3 +229,48 @@ p {
   color: #394867;
   font-size: x-large;
 }
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+  img {
+    width: 1024px;
+  }
+
+  .logo-img {
+    width: 150px !important;
+  }
+
+  .profile-pics {
+    width: 75px !important;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  img {
+    width: 768px;
+  }
+
+  .logo-img {
+    width: 100px !important;
+  }
+
+  .profile-pics {
+    width: 45px !important;
+  }
+}
+
+/* Cellphone */
+@media screen and (max-width: 480px) {
+  img {
+    width: 480px;
+  }
+
+  .logo-img {
+    width: 80px !important;
+  }
+
+  .profile-pics {
+    width: 25px !important;
+  }
+}
