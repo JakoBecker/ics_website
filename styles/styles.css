@@ -129,7 +129,7 @@ p {
   padding: 25px 0px 55px 0px;
   color: #14274e;
   font-family: "Archivo Black", sans-serif !important;
-  font-size: 35px !important;
+  font-size: 45px !important;
 }
 
 /* fontawesome */
@@ -230,6 +230,7 @@ p {
   font-size: x-large;
 }
 
+/* CSS for responsiveness */
 /* Laptop */
 @media screen and (max-width: 1024px) {
   img {
@@ -273,4 +274,10 @@ p {
   .profile-pics {
     width: 25px !important;
   }
+}
+
+/* Contact Details */
+.contact-details {
+  margin: 0% 0%;
+  padding-top: 5%;
 }
