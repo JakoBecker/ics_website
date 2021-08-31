@@ -47,6 +47,9 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="js/index.js"></script>
+
+    </script>
   </head>
   <body>
     <section class="white-section" id="title">
@@ -170,7 +173,7 @@
             <div class="form-div">
               <h3>Let's Talk</h3><br>
               <p class="text-white">Leave your contact details below and we will get in touch.</p>
-              <form>
+              <form action="mailto:jako@icst.co.za">
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01" style="width:100px;">Salutation</label>
@@ -186,43 +189,43 @@
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1" style="width:100px;">Name   </span>
+                    <span class="input-group-text" id="form-name" style="width:100px;">Name   </span>
                   </div>
                   <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
                   &nbsp;
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1" style="width:100px;">Surname</span>
+                    <span class="input-group-text" id="form-surname" style="width:100px;">Surname</span>
                   </div>
                   <input type="text" class="form-control" placeholder="Surname" aria-label="Surname" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1" style="width:100px;">Email</span>
+                    <span class="input-group-text" id="form-email" style="width:100px;">Email</span>
                   </div>
                   <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
                   &nbsp;
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1" style="width:100px;">Contact No</span>
+                    <span class="input-group-text" id="form-contact" style="width:100px;">Contact No</span>
                   </div>
                   <input type="text" class="form-control" placeholder="Contact" aria-label="Contact" aria-describedby="basic-addon1">
                 </div>
   
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1" style="width:100px;">Country</span>
+                    <span class="input-group-text" id="form-country" style="width:100px;">Country</span>
                   </div>
                   <input type="text" class="form-control" placeholder="Country" aria-label="Country" aria-describedby="basic-addon1">
                   &nbsp;
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1" style="width:100px;">Company</span>
+                    <span class="input-group-text" id="form-company" style="width:100px;">Company</span>
                   </div>
                   <input type="text" class="form-control" placeholder="Company" aria-label="Company" aria-describedby="basic-addon1">
                 </div>
                 <div class="form-group shadow-textarea">
-                  <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="How can we help"></textarea>
+                  <textarea class="form-control z-depth-1" id="form-query" rows="3" placeholder="How can we help"></textarea>
                 </div>
                 <br/>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-primary" onclick="sendEmail()">Submit</button>
                 <p class="text-white mt-4">By providing your information to ICS Trading you are providing consent for the processing of your personal information. 
                   Refer to the ICS Trading Privacy Policy for details on how ICS Trading collects and uses your personal information.</p>
               </form>
@@ -267,10 +270,10 @@
               <h4>Technology Partners</h4>         
             </div>
             <div class="col-4 mt-auto mb-auto">
-              <img src="img/wonder.png" alt="" width="45%">
+              <img class="part-logo" src="img/wonder.png" alt="" width="45%">
             </div>
             <div class="col-4 mt-auto mb-auto">
-              <img src="img/phoenix.png" alt="" width="45%">
+              <img class="part-logo" src="img/phoenix.png" alt="" width="45%">
             </div>
           </div>
           
@@ -284,8 +287,8 @@
             <p class="text-white">@2021 ICS Trading SA Pty Ltd</p>
           </div>
           <div class="col-sm-6 mt-1" style="height:5px;">
-            <a><span><i class="fab fa-facebook-square fa-lg text-white"></i></span></a>
-            <a><span><i class="fab fa-linkedin fa-lg text-white"></i></span></a>
+            <a href="https://www.facebook.com/ICS-Trading-110396111261974"><span><i class="fab fa-facebook-square fa-lg text-white"></i></span></a>
+            <a href="https://www.linkedin.com/company/ics-trading/?viewAsMember=true"><span><i class="fab fa-linkedin fa-lg text-white"></i></span></a>
           </div>
         </div>
       </div>

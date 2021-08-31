@@ -18,7 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
       rel="stylesheet"
     />
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -47,6 +50,11 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+    
   </head>
   <body>
     <section class="white-section" id="title">
@@ -143,27 +151,27 @@
     <!-- services section -->
 
     <section class="colored-section" id="pricing"">
-      <h2 class="section-heading">Our Services</h2>
+      <h2 class="section-heading animate__animated animate__fadeInLeft">Our Services</h2>
 
       <div id="services-carousel" class="carousel slide" data-ride="true" >
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div id="urs" class="carousel-item active">
             <div class="row">
-              <div class="pricing-column col-lg-3 col-md-6">
-                <div class="card" style="height: 100%">
+              <div class="pricing-column col-lg-3 col-md-6 mb-2">
+                <div class="card">
                   <div
                     class="card-header text-white"
                     style="background-color: #14274e"
                   >
-                    <h3>User Requirement Specification</h3>
+                    <h3 class="h3-card">User Requirement Specification</h3>
                   </div>
                   <div class="card-body">
                     <i class="fas fa-user-check fa-4x"></i>
                     <div class="card-text">
-                      <p>
+                      <p class="p-card">
                         Compile User Requirement Specifications on behalf of our
                         clients in run-up towards modification, upgrade or new
-                        installations.
+                        installations.<br/><br/>
                       </p>
                     </div>
                     <a class="btn btn-lg btn-dark btn-block" href="requirements.html" type="button">
@@ -173,21 +181,21 @@
                 </div>
               </div>
 
-              <div class="pricing-column col-lg-3 col-md-6">
-                <div class="card" style="height: 100%">
+              <div class="pricing-column col-lg-3 col-md-6 mb-2">
+                <div class="card">
                   <div
                     class="card-header text-white"
                     style="background-color: #14274e"
                   >
-                    <h3>Control Design</h3>
+                    <h3 class="h3-card">Control Design</h3>
                   </div>
                   <div class="card-body">
                     <i class="fas fa-edit fa-4x"></i>
                     <div class="card-text">
-                      <p>
+                      <p class="p-card">
                         Draft P&ID Diagrams, complying to ISA standards.
                         Reticulation and MCC Design Define a control standard
-                        for the customer
+                        for the customer.<br/><br/>
                       </p>
                     </div>
 
@@ -198,18 +206,18 @@
                 </div>
               </div>
 
-              <div class="pricing-column col-lg-3 col-md-12">
-                <div class="card" style="height: 100%">
+              <div class="pricing-column col-lg-3 col-md-12 mb-2">
+                <div class="card">
                   <div
                     class="card-header text-white"
                     style="background-color: #14274e"
                   >
-                    <h3>Installations & Commissioning</h3>
+                    <h3 class="h3-card">Installations & Commissioning</h3>
                   </div>
                   <div class="card-body">
                     <i class="fas fa-bolt fa-4x"></i>
                     <div class="card-text">
-                      <p>
+                      <p class="p-card">
                         We have reputable panel assembly partners, but our own
                         teams also regularly assemble MCC’s and control panels
                         up to standard. FAT testing is standard before
@@ -224,21 +232,21 @@
                 </div>
               </div>
 
-              <div class="pricing-column col-lg-3 col-md-12">
-                <div class="card" style="height: 100%">
+              <div class="pricing-column col-lg-3 col-md-12 mb-2">
+                <div class="card">
                   <div
                     class="card-header text-white"
                     style="background-color: #14274e"
                   >
-                    <h3>Knowledge From Data</h3>
+                    <h3 class="h3-card">Knowledge From Data</h3>
                   </div>
                   <div class="card-body">
                     <i class="fas fa-chart-bar fa-4x"></i>
                     <div class="card-text">
-                      <p>
+                      <p class="p-card">
                         We pride ourselves in offering the benchmark in:
                         Historical Logging and trending solutions. Reporting
-                        solutions scalable to customer requirements.
+                        solutions scalable to customer requirements.<br/><br/>
                       </p>
                     </div>
 
@@ -253,18 +261,18 @@
 
           <div class="carousel-item">
             <div class="row">
-              <div class="pricing-column col-lg-3 col-md-6">
-                <div class="card" style="height: 100%">
+              <div class="pricing-column col-lg-3 col-md-6 mb-2">
+                <div class="card">
                   <div
                     class="card-header text-white"
                     style="background-color: #14274e"
                   >
-                    <h3>Project Management</h3>
+                    <h3 class="h3-card">Project Management</h3>
                   </div>
                   <div class="card-body">
                     <i class="fas fa-tasks fa-4x"></i>
                     <div class="card-text">
-                      <p>
+                      <p class="p-card">
                         One of the most important aspects of any project is
                         managing the actions against goals, making quick
                         decisions when unforeseen realities hit, based on the
@@ -279,20 +287,20 @@
                 </div>
               </div>
 
-              <div class="pricing-column col-lg-3 col-md-6">
-                <div class="card" style="height: 100%">
+              <div class="pricing-column col-lg-3 col-md-6 mb-2">
+                <div class="card">
                   <div
                     class="card-header text-white"
                     style="background-color: #14274e"
                   >
-                    <h3>Investigations</h3>
+                    <h3 class="h3-card">Investigations</h3>
                   </div>
                   <div class="card-body">
                     <i class="fas fa-search fa-4x"></i>
                     <div class="card-text">
-                      <p>
+                      <p class="p-card">
                         Plant operational, Unusual occurrences, Failure ratings,
-                        Reliability Studies, And More...
+                        Reliability Studies, And More...<br/><br/><br/>
                       </p>
                     </div>
 
@@ -303,20 +311,20 @@
                 </div>
               </div>
 
-              <div class="pricing-column col-lg-3 col-md-12">
-                <div class="card" style="height: 100%">
+              <div class="pricing-column col-lg-3 col-md-12 mb-2">
+                <div class="card">
                   <div
                     class="card-header text-white"
                     style="background-color: #14274e"
                   >
-                    <h3>Maintenance Contracts</h3>
+                    <h3 class="h3-card">Maintenance Contracts</h3>
                   </div>
                   <div class="card-body">
                     <i class="fas fa-file-signature fa-4x"></i>
                     <div class="card-text">
-                      <p>
+                      <p class="p-card">
                         It is a reality that highly skilled automation personnel
-                        often have different ambitions than working at a single
+                        often have different ambitions than working at a single<br/><br/><br/>
                         <!-- production plant permanently. Typically these
                         individuals needs to be challenged and continuously
                         developed to get job satisfaction. ICS offers the
@@ -332,20 +340,20 @@
                 </div>
               </div>
 
-              <div class="pricing-column col-lg-3 col-md-12">
-                <div class="card" style="height: 100%">
+              <div class="pricing-column col-lg-3 col-md-12 mb-2">
+                <div class="card">
                   <div
                     class="card-header text-white"
                     style="background-color: #14274e"
                   >
-                    <h3>Sales</h3>
+                    <h3 class="h3-card">Sales</h3>
                   </div>
                   <div class="card-body">
                     <i class="fas fa-box-open fa-4x"></i>
                     <div class="card-text">
-                      <p>
+                      <p class="p-card">
                         Industrial Controls, Computer Equipment, Network
-                        Equipment, Software, Electrical Equipment and Repairs
+                        Equipment, Software, Electrical Equipment and Repairs<br/><br/><br/>
                       </p>
                     </div>
 
@@ -402,7 +410,7 @@
           <div class="form-div">
             <h3>Let's Talk</h3><br>
             <p class="text-white">Leave your contact details below and we will get in touch.</p>
-            <form>
+            <form method="post">
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <label class="input-group-text" for="inputGroupSelect01" style="width:100%;">Salutation</label>
@@ -418,43 +426,44 @@
               </div>
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1" style="width:100%;">Name   </span>
+                  <span class="input-group-text" style="width:100%;">Name   </span>
                 </div>
-                <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="form-name" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1" required>
                 &nbsp;
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon1" style="width:100%;">Surname</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Surname" aria-label="Surname" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="form-surname" placeholder="Surname" aria-label="Surname" aria-describedby="basic-addon1" required>
               </div>
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon1" style="width:100%;">Email</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                <input type="email" class="form-control" id="form-email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1"
+                pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$" required>
                 &nbsp;
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon1" style="width:100%;">Contact No</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Contact" aria-label="Contact" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="form-contact" placeholder="Contact" aria-label="Contact" aria-describedby="basic-addon1" required>
               </div>
 
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon1" style="width:100%;">Country</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Country" aria-label="Country" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="form-country" placeholder="Country" aria-label="Country" aria-describedby="basic-addon1">
                 &nbsp;
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon1" style="width:100px;">Company</span>
                 </div>
-                <input type="text" class="form-control" placeholder="Company" aria-label="Company" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" id="form-company" placeholder="Company" aria-label="Company" aria-describedby="basic-addon1">
               </div>
               <div class="form-group shadow-textarea">
-                <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="How can we help"></textarea>
+                <textarea class="form-control z-depth-1" id="form-query" id="exampleFormControlTextarea6" rows="3" placeholder="How can we help" required></textarea>
               </div>
               <br/>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-primary" onclick="sendEmail()">Submit</button>
               <p class="text-white mt-4">By providing your information to ICS Trading you are providing consent for the processing of your personal information. 
                 Refer to the ICS Trading Privacy Policy for details on how ICS Trading collects and uses your personal information.</p>
             </form>
@@ -471,10 +480,10 @@
             <h4>Technology Partners</h4>         
           </div>
           <div class="col-4 mt-auto mb-auto">
-            <img src="img/wonder.png" alt="" width="45%">
+            <img class="part-logo" class="part-logo" src="img/wonder.png" alt="" width="45%">
           </div>
           <div class="col-4 mt-auto mb-auto">
-            <img src="img/phoenix.png" alt="" width="45%">
+            <img class="part-logo" class="part-logo" src="img/phoenix.png" alt="" width="45%">
           </div>
         </div>
         
@@ -482,13 +491,14 @@
     </section>
 
     <section class="footer-section" style="height: 30px;">
+      <div class="containe-fluid">
         <div class="row m-0 p-0">
-          <div class="col-sm-6" style="height:5px;">
+          <div class="col-sm-6 p-1" style="height:5px;">
             <p class="text-white">@2021 ICS Trading SA Pty Ltd</p>
           </div>
           <div class="col-sm-6 mt-1" style="height:5px;">
-            <a><span><i class="fab fa-facebook-square fa-lg text-white"></i></span></a>
-            <a><span><i class="fab fa-linkedin fa-lg text-white"></i></span></a>
+            <a href="https://www.facebook.com/ICS-Trading-110396111261974"><span><i class="fab fa-facebook-square fa-lg text-white"></i></span></a>
+            <a href="https://www.linkedin.com/company/ics-trading/?viewAsMember=true"><span><i class="fab fa-linkedin fa-lg text-white"></i></span></a>
           </div>
         </div>
       </div>
