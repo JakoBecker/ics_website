@@ -262,7 +262,7 @@ p {
 }
 
 /* Cellphone */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   img {
     width: 480px;
   }
@@ -271,8 +271,54 @@ p {
     width: 80px !important;
   }
 
+  h4 {
+    font-size: small !important;
+  }
+
+  .text-white {
+    font-size: 10px;
+  }
+
+  .part-logo {
+    width: 100px;
+  }
+
   .profile-pics {
-    width: 25px !important;
+    width: 70px !important;
+  }
+
+  .p-card {
+    font-size: smaller;
+  }
+
+  .h3-card {
+    font-size: small;
+  }
+
+  .btn-lg {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .fa-user-check,
+  .fa-edit,
+  .fa-bolt,
+  .fa-chart-bar,
+  .fa-tasks,
+  .fa-search,
+  .fa-file-signature,
+  .fa-box-open,
+  .fa-utensils,
+  .fa-acquisitions-incorporated,
+  .fa-pallet,
+  .fa-industry,
+  .fa-oil-can {
+    size: 10px;
+  }
+
+  .contact-text {
+    font-size: large;
   }
 }
 
@@ -280,4 +326,11 @@ p {
 .contact-details {
   margin: 0% 0%;
   padding-top: 5%;
+}
+
+/* Validation */
+input:invalid {
+}
+
+input:invalid:required {
 }
