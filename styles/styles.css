@@ -40,6 +40,11 @@ p {
   font-family: "Montserrat-Black", sans-serif;
 }
 
+.div-iotImage {
+  margin-left: 25%;
+  margin-top: 3%;
+}
+
 .row {
 }
 
@@ -271,8 +276,21 @@ p {
     width: 80px !important;
   }
 
+  h2 {
+    font-size: medium !important;
+  }
+
   h4 {
     font-size: small !important;
+  }
+
+  .img-iot {
+    width: 450px;
+    margin-top: 5%;
+  }
+
+  .div-iotImage {
+    margin-left: 5%;
   }
 
   .text-white {
@@ -289,6 +307,12 @@ p {
 
   .p-card {
     font-size: smaller;
+  }
+
+  .p-iot {
+    font-size: smaller;
+    margin-left: 5%;
+    margin-bottom: 25px;
   }
 
   .h3-card {
