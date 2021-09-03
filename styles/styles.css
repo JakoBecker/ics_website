@@ -285,7 +285,7 @@ p {
   }
 
   .img-iot {
-    width: 450px;
+    width: 420px;
     margin-top: 5%;
   }
 
@@ -338,11 +338,44 @@ p {
   .fa-pallet,
   .fa-industry,
   .fa-oil-can {
-    size: 10px;
+    font-size: 10px;
   }
 
   .contact-text {
     font-size: large;
+  }
+
+  .round-div {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    font-size: 0.5rem;
+  }
+
+  .icon-serv {
+    font-size: 0.5rem;
+    padding-left: 0;
+    padding-top: 3%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .serv-row {
+    padding: 19px !important;
+  }
+
+  .contact-div {
+    font-size: smaller;
+  }
+
+  .bold-style {
+    font-size: small;
   }
 }
 
