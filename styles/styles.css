@@ -269,7 +269,7 @@ p {
 /* Cellphone */
 @media screen and (max-width: 500px) {
   img {
-    width: 480px;
+    width: 450px;
   }
 
   .logo-img {
