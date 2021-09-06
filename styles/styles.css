@@ -274,9 +274,9 @@ p {
 
 /* Cellphone */
 @media screen and (max-width: 500px) {
-  img {
+  /* img {
     width: 450px;
-  }
+  } */
 
   .logo-img {
     width: 80px !important;
