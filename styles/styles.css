@@ -28,16 +28,27 @@ h3 {
 }
 
 h2 {
-  font-family: "Archivo Black", sans-serif !important;
-  font-size: 2vw !important;
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 45px !important;
   color: #14274e !important;
-  padding-bottom: 45px !important;
 }
 
 p {
   padding: 5px 0;
   margin-bottom: auto;
   font-family: "Montserrat-Black", sans-serif;
+}
+
+.h1-jako {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 45px !important;
+  color: #14274e !important;
+}
+
+.p-jako {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 25px !important;
+  color: #14274e !important;
 }
 
 .div-iotImage {
@@ -50,6 +61,12 @@ p {
 
 /* sections */
 
+.white-section-withbg {
+  padding: 45px 45px;
+  text-align: center;
+  background-image: url("../img/services.png");
+}
+
 .colored-section {
   background-color: #f1f6f9;
   padding: 55px 0px 100px 0px;
@@ -58,11 +75,16 @@ p {
 
 .colored-section-blue {
   background-color: #14274e;
-  padding: 55px 0px 100px 0px;
+  padding: 55px 0px 80px 0px;
   text-align: center;
 }
 
 .logo-section {
+  background-color: #f1f6f9;
+  text-align: center;
+}
+
+.logo-section-blue {
   background-color: #f1f6f9;
   text-align: center;
 }
@@ -195,6 +217,11 @@ p {
   text-align: left;
 }
 
+.text-white {
+  font-family: "Montserrat-Black", sans-serif !important;
+  font-size: 15px;
+}
+
 /* forms */
 
 .form-div {
@@ -274,6 +301,18 @@ p {
 
 /* Cellphone */
 @media screen and (max-width: 500px) {
+  .h1-jako {
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 25px !important;
+    color: #14274e !important;
+  }
+
+  .p-jako {
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 15px !important;
+    color: #14274e !important;
+  }
+
   /* img {
     width: 450px;
   } */
